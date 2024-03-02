@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".UI_Controllers.MenuActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/menu_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Bearry's Chicken Adventure"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_TXT_title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/menu_TXT_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Select Speed:" />
+
+        <RadioGroup
+            android:id="@+id/menu_RG_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_TXT_speed"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/menu_RB_slow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="48dp"
+                android:checked="true"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:text="Slow" />
+
+            <RadioButton
+                android:id="@+id/menu_RB_fast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:text="Fast" />
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/menu_TXT_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_RG_speed"
+            android:layout_marginTop="36dp"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Select Mode:" />
+
+        <RadioGroup
+            android:id="@+id/menu_RG_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_TXT_mode"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/menu_RB_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:checked="true"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:text="Buttons" />
+
+            <RadioButton
+                android:id="@+id/menu_RB_tilt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:text="Tilt" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/menu_BTN_records"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="@color/red_100"
+        android:fontFamily="casual"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:icon="@drawable/bearry_start"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:iconSize="60dp"
+        app:iconTintMode="multiply"
+        app:strokeWidth="2dp"
+        android:text="Start Game" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_BTN_records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/red_100"
+        android:fontFamily="casual"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:strokeWidth="2dp"
+        android:text="Highscore Table" />
+
+</RelativeLayout>

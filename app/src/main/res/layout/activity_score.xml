@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/deep_purple_100"
+    tools:context=".UI_Controllers.ScoreActivity">
+
+    <FrameLayout
+        android:id="@+id/score_FRAME_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="20dp"
+        android:background="@color/red_100"/>
+
+    <FrameLayout
+        android:id="@+id/score_FRAME_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:background="@color/cyan_200"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/score_BTN_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/red_100"
+        android:fontFamily="casual"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:strokeWidth="2dp"
+        android:text="Back To Homepage" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
